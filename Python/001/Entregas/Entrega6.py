@@ -1,15 +1,29 @@
-class Vehiculo:
-    color = "Rojo"
-    ruedas = 4
-    puertas = 2
+# Inicializamos la clase Vehiculo
+class Vehiculo():
+    # Inicializamos los atributos de la clase
+    def __init__(self, color, ruedas, puertas):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
+
+    def __str__(self) -> str:
+        return f"El color del coche es {self.color}, posee {self.ruedas} ruedas, tiene {self.puertas} puertas"
 
 
 class coche(Vehiculo):
-    velocidad = 300
-    cilindrada = 5000
+    def __init__(self, color, ruedas, puertas, velocidad, cilindrada):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
+
+    def __str__(self) -> str:
+        return super().__str__() + f", su velocidad es de {self.velocidad} Km/h y su cilindrada es de {self.cilindrada} cc."
 
 
-super_deportivo = coche()
-print(
-    f"El color del coche es {super_deportivo.color}, tiene {super_deportivo.ruedas} ruedas, {super_deportivo.puertas} puertas, una velocidad de {super_deportivo.velocidad} km/h y una cilindrada de {super_deportivo.cilindrada} cc."
-)
+# Creamos un objeto de la clase Vehiculo
+# y le pasamos los parametros
+# despues lo imprimimos
+super_deportivo = coche("Rojo", 4, 2, 300, 5000)
+print(super_deportivo)
