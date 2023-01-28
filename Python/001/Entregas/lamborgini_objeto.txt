@@ -1,1 +1,0 @@
-{"color": "rojo", "puertas": "4"}
