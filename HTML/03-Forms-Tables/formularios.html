@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <!-- Formulario -->
+    <form action="result.html" method="GET">
+      <div class="">
+        <label for="nombre">Nombre de usuario:</label>
+        <input type="text" name="nombre" id="nombre" required />
+      </div>
+
+      <br />
+
+      <div class="">
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" id="contraseña" required />
+      </div>
+
+      <br />
+
+      <div class="">
+        <label for="edad">Edad:</label>
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          required
+          min="0"
+          max="200"
+          step="5"
+        />
+      </div>
+
+      <br />
+
+      <div class="">
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" name="fecha" id="fecha" required />
+        <input type="time" name="hora" id="hora" />
+      </div>
+
+      <br />
+
+      <div class="">
+        <label for="email">Email:</label>
+        <input type="email" name="edad" id="email" required />
+      </div>
+
+      <br />
+
+      <div class="">
+        <label for="comentarios">Comentario</label>
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+
+      <br />
+
+      <!-- Tipos de Botones -->
+      <button type="reset">Reset</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
