@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia con HTML</title>
+  </head>
+  <body>
+    <!-- Imagenes -->
+    <h3>Imagenes</h3>
+    <img
+      src="https://picsum.photos/1000"
+      alt="Imagen de prueba"
+      width="300"
+      height="300"
+    />
+
+    <!-- Videos -->
+    <h3>Videos</h3>
+    <video width="300" controls muted loop>
+      <track
+        kind="captions"
+        src="https://www.w3schools.com/html/mov_bbb.vtt"
+        srclang="en"
+        label="English"
+        default
+      />
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Audio -->
+    <h3>Audio</h3>
+    <audio controls autoplay loop>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+</html>
