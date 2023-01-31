@@ -1,0 +1,41 @@
+/* Selectores */
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Selectores de etiqueta */
+body {
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 1em;
+  color: orange;
+}
+
+h1 {
+  color: red;
+}
+
+/* Selectores de clase */
+.encabezado {
+  color: blue;
+}
+
+/* Selectores de id */
+#primera-noticia {
+  color: green;
+}
+
+#segunda-noticia {
+  color: purple;
+}
+
+/* Selectores de atributo */
+a[target="_bl ank"] {
+  color: red;
+}
