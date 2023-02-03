@@ -1,0 +1,35 @@
+.contenedor {
+  background-color: aqua;
+  width: 400px;
+  height: 100px;
+  padding: 15px;
+  margin-bottom: 100px;
+  overflow: visible;
+}
+
+.contenedor-hidden {
+  background-color: aqua;
+  width: 400px;
+  height: 100px;
+  padding: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.contenedor-scroll {
+  background-color: aqua;
+  width: 400px;
+  height: 100px;
+  padding: 15px;
+  overflow: scroll;
+  margin-bottom: 30px;
+}
+
+.contenedor-auto {
+  background-color: aqua;
+  width: 400px;
+  height: 100px;
+  padding: 15px;
+  overflow: auto;
+  margin-bottom: 30px;
+}

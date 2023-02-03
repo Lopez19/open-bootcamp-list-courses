@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.encabezado {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.galeria {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imagen-galeria {
+  width: 300px;
+}

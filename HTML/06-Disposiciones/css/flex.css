@@ -1,0 +1,32 @@
+.flex {
+  display: flex;
+  background-color: red;
+  height: 500px;
+  border: 10px solid black;
+
+  /* Posicionamiento FlexBox */
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.contenido-1 {
+  background-color: white;
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.contenido-2 {
+  background-color: white;
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.contenido-3 {
+  background-color: white;
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+}

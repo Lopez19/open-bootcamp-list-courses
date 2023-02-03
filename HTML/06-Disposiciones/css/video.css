@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 3rem;
+}
+
+.header button {
+  width: 150px;
+  height: 50px;
+  background: red;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header button:hover {
+  background: white;
+  color: red;
+  transform: scale(1.1);
+  border: red 2px solid;
+}
