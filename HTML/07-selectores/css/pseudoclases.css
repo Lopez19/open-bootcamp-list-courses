@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+/* Hover */
+.hover {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hover:hover {
+  background-color: blue;
+  border-radius: 10px;
+}
+
+/* First-Child */
+.listado {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+  background-color: aquamarine;
+}
+
+.listado p:first-child {
+  color: red;
+}
+
+/* Links */
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: green;
+}

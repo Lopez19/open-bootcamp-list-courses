@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 20px;
+  background-color: wheat;
+}
+
+.contenedor {
+  width: 300px;
+  height: 150px;
+  background-color: red;
+  padding: 20px;
+  margin: 20px auto;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 10px;
+}
+
+span.frase {
+  font-style: italic;
+}
+
+/* Antes */
+span.frase::before {
+  content: "“";
+}
+
+/* Después */
+span.frase::after {
+  content: "”";
+}
+
+.libro {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1em;
+  background-color: pink;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.libro p::first-letter {
+  font-size: 2em;
+  font-weight: 700;
+  color: red;
+}
+
+.libro p::first-line {
+  color: blue;
+}
+
+.libro p::selection {
+  background-color: gray;
+  color: white;
+}
+
+.listado {
+  width: 300px;
+  height: 150px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.listado ul li::marker {
+  color: red;
+}
