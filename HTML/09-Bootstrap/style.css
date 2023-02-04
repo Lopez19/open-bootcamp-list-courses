@@ -1,0 +1,8 @@
+body {
+  background-color: black;
+  padding: 20px 0;
+}
+.relleno {
+  background-color: red;
+  border: 1px solid white;
+}
