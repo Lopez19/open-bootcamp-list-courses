@@ -1,0 +1,34 @@
+.padre {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
+.hijo {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+  transition: transform 0.5s;
+}
+
+.padre:hover .hijo {
+  animation: mover 2s forwards infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100%, 0);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  75% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

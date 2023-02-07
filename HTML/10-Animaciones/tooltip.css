@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-tooltip {
+  position: relative;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-tooltip:hover {
+  background: #555;
+}
+
+.tooltip {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  color: #333;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid red;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.btn-tooltip:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 1%;
+  border: solid 10px transparent;
+  border-top-color: red;
+  z-index: -1;
+}
+
+/* .tutorial {
+  border: solid 10px transparent;
+  background-color: blue;
+  border-top-color: red;
+  border-bottom-color: yellow;
+  border-left-color: green;
+  border-right-color: blue;
+  margin-left: 40px;
+  transform: rotate(-45deg);
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+} */
