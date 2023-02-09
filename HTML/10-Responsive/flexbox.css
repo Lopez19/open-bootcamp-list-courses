@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: pink;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  min-height: 15rem;
+  /* Eje principal */
+  justify-content: space-evenly;
+
+  /* Eje secundario */
+  align-items: center;
+
+  /* flex-direction: column; */
+}
+
+.item {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  /* width: 150px; */
+  /* height: 150px; */
+  font-family: "Ubuntu", Times, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.item1 {
+  background-color: aqua;
+}
+
+.item2 {
+  background-color: blue;
+}
+
+.item3 {
+  background-color: green;
+}
+
+.item4 {
+  background-color: yellow;
+}

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.escenario {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.escenario-1 {
+  width: 100%;
+}
+
+.escenario-2 {
+  width: 50%;
+}
+
+.px {
+  background-color: green;
+  width: 200px;
+}
+
+.porcentaje {
+  background-color: red;
+  width: 50%;
+}
+
+.view {
+  background-color: yellow;
+  width: 50vw;
+}
