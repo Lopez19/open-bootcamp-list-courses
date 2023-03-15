@@ -1,0 +1,269 @@
+@use "components";
+
+// Mixins
+@mixin section-display {
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    // Modify scrollbar
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #ddd;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: components.$color-main;
+        border-radius: 30px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+
+    .logo {
+        img {
+            max-width: 7rem;
+        }
+    }
+}
+
+.sec-home {
+    display: flex;
+    align-items: center;
+    @include section-display();
+
+    .home-cta {
+        flex: 1;
+
+        .cta-text {
+            color: components.$color-main;
+        }
+
+        .home-title {
+            width: 20rem;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .home-description {
+            width: 300px;
+            font-size: 1.1rem;
+            color: #888;
+        }
+
+        .lead-magnet {
+            .input-col {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .home-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+}
+
+.sec-features {
+    @include section-display();
+
+    .intro {
+        text-align: center;
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+
+    .features {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .text {
+            padding: 2rem 0;
+            max-width: 40%;
+
+            .feature {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+
+                .description {
+                    margin-left: 1rem;
+
+                    &-title {
+                        font-size: 1.15rem;
+                    }
+
+                    &-text {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .image {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.sec-benefits {
+    border-top: 1px solid #ddd;
+
+    .intro {
+        @extend .sec-features, .intro;
+        text-align: center;
+    }
+
+    .benefit-cards {
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+
+.sec-kpis {
+    background-color: components.$color-main;
+    width: 100%;
+    color: white;
+    padding: 3rem;
+
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .number {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+
+        .desc {
+            font-size: .9rem;
+            font-weight: 600;
+            color: #ffffff80;
+        }
+    }
+}
+
+.sec-onboarding {
+    .intro {
+        @extend .sec-features, .intro;
+        text-align: center;
+    }
+
+    .steps {
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.sec-footer-cta {
+    background-color: components.$footer-color;
+    padding: 5rem;
+    background-image: url("https://assets.coinbase.com/assets/9b8b54316f0687f79fb3.webp");
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+
+    .footer-cta {
+        width: 50%;
+
+        .cta-title {
+            font-size: 2rem;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sec-features {
+        .features {
+            flex-direction: column;
+
+            .text {
+                max-width: 100%;
+            }
+
+            .image {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .sec-onboarding {
+        .steps {
+            flex-direction: column;
+            text-align: center;
+
+            .step-separator {
+                display: none;
+            }
+        }
+    }
+
+    .sec-footer-cta {
+        background-image: none;
+
+        .footer-cta {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .sec-benefits {
+        .intro {
+            text-align: center;
+
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
