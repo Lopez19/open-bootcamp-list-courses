@@ -1,0 +1,19 @@
+JavaScript
+
+* Introducción a JavaScript:
+-- Lenguaje interpretado: no necesita compilación
+
+** Que es JavaScript:
+-- lenguaje de programación interpretado, orientado a objetos, débilmente tipado y dinámico.
+
+-- Inicialmente se creo para darle interactividad a las páginas web, pero se ha convertido en un lenguaje de programación general.
+
+** Que es ECMAScript:
+-- Es el estándar que define las características de JavaScript. Se basa en el lenguaje de programación Java, pero no es lo mismo.
+
+-- La versión actual es ECMAScript 6 (ES6)
+
+* NodeJs y NPM:
+-- NodeJs es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.
+
+-- NPM es el gestor de paquetes de NodeJs.
