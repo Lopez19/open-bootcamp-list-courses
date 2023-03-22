@@ -17,3 +17,7 @@ JavaScript
 -- NodeJs es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.
 
 -- NPM es el gestor de paquetes de NodeJs.
+
+* Estructuras de control:
+-- Bucles: for, while, do while, for in, for of
+-- Bifurcaciones: if, if else, if else if, switch
