@@ -1,0 +1,21 @@
+let nombre = "Horacio";
+let apellido = "Lopez Moreno";
+let estudiante = ` estudiante ${nombre} ${apellido} `;
+let estudianteMayus = estudiante.toUpperCase();
+let estudianteMinus = estudiante.toLowerCase();
+let estudiante_length = estudiante.length;
+let firtLetterNombre = nombre[0];
+let lastLetterApellido = apellido[apellido.length - 1];
+let estudianteSinEspacios = estudiante.trim();
+let estudianteInclude = estudiante.includes(nombre);
+
+console.log(nombre);
+console.log(apellido);
+console.log(estudiante);
+console.log(estudianteMayus);
+console.log(estudianteMinus);
+console.log(estudiante_length);
+console.log(firtLetterNombre);
+console.log(lastLetterApellido);
+console.log(estudianteSinEspacios);
+console.log(estudianteInclude);
